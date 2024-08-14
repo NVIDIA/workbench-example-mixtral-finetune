@@ -1,8 +1,8 @@
 specVersion: v2
 specMinorVersion: 1
 meta:
-  name: mixtral-8x7b-finetune
-  image: project-mixtral-8x7b-finetune
+  name: mixtral-finetune
+  image: project-mixtral-finetune
   description: An NVIDIA AI Workbench project for finetuning a Mixtral 8x7b MoE model
   labels: []
   createdOn: "2024-07-03T21:15:49Z"
