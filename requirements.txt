@@ -1,6 +1,6 @@
 jupyterlab>3.0
 bitsandbytes==0.43.1
-transformers==4.42.3
+transformers==4.48.0
 peft==0.11.1
 accelerate==0.32.0
 datasets==2.20.0
