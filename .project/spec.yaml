@@ -23,16 +23,18 @@ layout:
 environment:
   base:
     registry: nvcr.io
-    image: nvidia/ai-workbench/pytorch:1.0.2
+    image: nvidia/pytorch:25.09-py3
     build_timestamp: "20231102150513"
     name: PyTorch
-    supported_architectures: []
-    cuda_version: "12.2"
-    description: A Pytorch 2.1 Base with CUDA 12.2
+    supported_architectures:
+    - amd64
+    - arm64
+    cuda_version: "13.0"
+    description: The NGC PyTorch 2.9 base with CUDA 13.0
     entrypoint_script: ""
     labels:
-    - cuda12.2
-    - pytorch2.1
+    - cuda13.0
+    - pytorch2.9
     apps:
     - name: jupyterlab
       type: jupyterlab
@@ -75,10 +77,10 @@ environment:
     programming_languages:
     - python3
     icon_url: ""
-    image_version: 1.0.2
+    image_version: "25.09"
     os: linux
     os_distro: ubuntu
-    os_distro_release: "22.04"
+    os_distro_release: "24.04"
     schema_version: v2
     user_info:
       uid: ""
@@ -95,7 +97,7 @@ environment:
     - name: pip
       binary_path: /usr/local/bin/pip
       installed_packages:
-      - jupyterlab==4.0.7
+      - jupyterlab==4.4.7
     package_manager_environment:
       name: ""
       target: ""
